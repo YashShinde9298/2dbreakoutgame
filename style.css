@@ -1,0 +1,104 @@
+:root {
+    --color-blue: #8aacff;
+    --color-primary: #626fe6;
+    --color-purple: #6d42c7;
+    --color-orange: #e85b48;
+    --color-background: #eeeeee;
+    --color-dark: #334854;
+    --color-yellow: #f9c535;
+    --color-danger: #cb0101;
+    --color-info: #505458;
+    --color-text: #fff;
+    --color-light: rgba(132, 139, 200, 0.18);
+    --background-gradient: radial-gradient(circle at 52.1% -29.6%, rgb(144, 17, 105) 0%, rgb(51, 0, 131) 100.2%);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: var(--background-gradient);
+}
+
+h1 {
+    color: var(--color-text);
+}
+
+.header {
+    width: 100%;
+    height: 20vh;
+    display: grid;
+    grid-gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    border-radius: 10px;
+    height: 40px;
+    width: 50%;
+    border: none;
+    box-shadow: var(--box-shadow);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+
+.grid {
+    margin-top: 200px;
+    position: absolute;
+    width: 680px;
+    height: 400px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+}
+
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: var(--color-yellow);
+}
+
+.user {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: var(--color-text);
+    border-radius: 8px;
+}
+
+.ball {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--color-danger);
+    font-weight: 600;
+    box-shadow: var(--box-shadow);
+}
+
+#score {
+    color: var(--color-text);
+}
