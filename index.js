@@ -157,17 +157,6 @@ function checkForCollision() {
         && (ballCurrentPos[1] > currentPos[1] && ballCurrentPos[1] < currentPos[1] + blockHeight)) {
         changeDirection()
     }
-    // if (ballCurrentPosition[0] >= (boardWidth - ballDiameter) ||
-    //     ballCurrentPosition[1] >= (boardHeight - ballDiameter) ||
-    //     ballCurrentPosition[0] <= 0
-
-    // ) { changeDirection() }
-
-    // if ((ballCurrentPosition[0] > currentPosition[0] &&
-    //     ballCurrentPosition[0] < currentPosition[0] + blockWidth)
-    //     && (ballCurrentPosition[1] > currentPosition[1]
-    //         && ballCurrentPosition[1] < currentPosition[1] + blockHight)
-    // ) { changeDirection() }
 
     if (ballCurrentPos[1] <= 0) {
         clearInterval(timerId);
